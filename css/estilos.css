@@ -1,0 +1,31 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+header{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: silver;
+}
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.listNav{
+    list-style: none;
+}
+.listNav .linkNav{
+    text-decoration: none;
+    color: white;
+}
+.iconosRedes {
+    color: white;
+    height: 50px;
+}
