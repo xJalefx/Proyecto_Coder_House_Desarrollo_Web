@@ -1,31 +1,119 @@
-*{
+* {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
-header{
+}
+
+header {
     background-color: black;
     color: white;
 }
-body{
-    background-color: silver;
+
+html {
+    height: 100%;
 }
-main{
+
+body {
+    background-color: silver;
+    min-height: 100%;
+}
+
+main {
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 1%;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
+    padding-top: 2%;
+    bottom: 0;
+    width: 100%;
 }
-.listNav{
+
+.listNav {
     list-style: none;
 }
-.listNav .linkNav{
+
+.listNav .linkNav {
     text-decoration: none;
     color: white;
 }
+
 .iconosRedes {
     color: white;
     height: 50px;
+}
+
+.btn {
+    background-color: rgb(28, 160, 153);
+}
+
+.col-sm-6 {
+    padding-top: 2%;
+}
+
+.carousel>.carousel-inner>.carousel-item>img {
+    width: 100%px;
+    height: 35%px;
+}
+
+.video_card {
+    padding: 2%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.h1 {
+    font-size: 3rem;
+}
+
+.texto_nosotros {
+    font-size: medium;
+    padding: 2%
+}
+
+.textoarea {
+    resize: none;
+}
+
+.nav-link {
+    font-size: 25px;
+}
+
+.logo_navbar {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-brand {
+    width: 100px;
+    height: 100px;
+}
+
+.video_youtube {
+    height: 780px;
+}
+
+@media screen and (max-width:768px) {
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .logo_navbar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-brand {
+        width: 50px;
+        height: 50px;
+    }
+
+    .video_youtube {
+        height: 300px;
+    }
 }
