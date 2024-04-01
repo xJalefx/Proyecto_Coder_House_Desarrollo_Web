@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'animaciones';
+@import 'mixin';
+@import 'header';
+@import 'font';
+@import 'mainIndex';
+@import 'html';
+@import 'body';
+@import 'footer';
+@import 'mainNosotros';
+@import 'mainEvaluacion';
+
+.fadein img{
+    opacity:0.5;
+    transition: 1s ease;
+    }
+    
+    .fadein img:hover{
+    opacity:1;
+    transition: 1s ease;
+    }

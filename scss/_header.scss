@@ -1,0 +1,20 @@
+header {
+    background-color:$colorfondo;
+    color:$colorprimario;
+
+    .nav-link {
+        font-size: 25px;
+    }
+    .btn {
+        background-color: rgb(28, 160, 153);
+    }
+    .logo_navbar {
+        width: $width100px;
+        height: $heigth100px;
+    }
+    
+    .navbar-brand {
+        width: $width100px;
+        height: $heigth100px;
+    }
+}

@@ -1,0 +1,46 @@
+main {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    @mixin color-mix{
+        background-color: rgb(28, 160, 153);
+    }
+    .cont {
+        box-sizing: border-box
+
+    }
+    .btn {
+        @include color-mix;
+    }
+    .col-sm-6 {
+        padding-top: 2%;
+    }
+    .carousel>.carousel-inner>.carousel-item>img {
+        width: $width100px;
+        height: 35%px;
+    }
+    .video_card {
+        padding: 2%;
+    }
+    .card-body {
+        text-align: center;   
+    }
+    .video_youtube {
+        height: 780px;
+    }
+    
+    @media screen and (max-width:768px) {
+
+
+        .video_youtube {
+            height: 300px;
+        }
+    .card{
+        width: 95%
+    }
+    .card.mb-3 {
+        width: 50%;
+      }
+    
+    }
+}

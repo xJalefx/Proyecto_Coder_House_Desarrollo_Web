@@ -1,119 +1,179 @@
-* {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+.text-parrafo {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: rgb(134, 129, 129);
+  padding: 10px;
 }
 
+.hoverdestello figure {
+  position: relative;
+}
+
+.hoverdestello figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+.hoverdestello figure:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 header {
-    background-color: black;
-    color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+header .nav-link {
+  font-size: 25px;
+}
+header .btn {
+  background-color: rgb(28, 160, 153);
+}
+header .logo_navbar {
+  width: 100px;
+  height: 100px;
+}
+header .navbar-brand {
+  width: 100px;
+  height: 100px;
 }
 
-html {
-    height: 100%;
-}
-
-body {
-    background-color: silver;
-    min-height: 100%;
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 main {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+}
+main .cont {
+  box-sizing: border-box;
+}
+main .btn {
+  background-color: rgb(28, 160, 153);
+}
+main .col-sm-6 {
+  padding-top: 2%;
+}
+main .carousel > .carousel-inner > .carousel-item > img {
+  width: 100px;
+  height: 35% px;
+}
+main .video_card {
+  padding: 2%;
+}
+main .card-body {
+  text-align: center;
+}
+main .video_youtube {
+  height: 780px;
+}
+@media screen and (max-width: 768px) {
+  main .video_youtube {
+    height: 300px;
+  }
+  main .card {
+    width: 95%;
+  }
+  main .card.mb-3 {
+    width: 50%;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  min-height: 100%;
+}
+body .h1 {
+  font-size: 3rem;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    padding-top: 2%;
-    bottom: 0;
-    width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-top: 2%;
+  bottom: 0;
+  width: 100%;
 }
-
-.listNav {
-    list-style: none;
+footer .listNav {
+  list-style: none;
 }
-
-.listNav .linkNav {
-    text-decoration: none;
-    color: white;
+footer .listNav .linkNav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-
-.iconosRedes {
-    color: white;
+footer .iconosRedes {
+  color: rgb(255, 255, 255);
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  footer .nav-link {
+    font-size: 15px;
+  }
+  footer .logo_navbar {
+    width: 50px;
     height: 50px;
-}
-
-.btn {
-    background-color: rgb(28, 160, 153);
-}
-
-.col-sm-6 {
-    padding-top: 2%;
-}
-
-.carousel>.carousel-inner>.carousel-item>img {
-    width: 100%px;
-    height: 35%px;
-}
-
-.video_card {
-    padding: 2%;
-}
-
-.card-body {
-    text-align: center;
-}
-
-.h1 {
-    font-size: 3rem;
+  }
+  footer .navbar-brand {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .texto_nosotros {
-    font-size: medium;
-    padding: 2%
+  font-size: medium;
+  padding: 2%;
 }
 
 .textoarea {
-    resize: none;
+  resize: none;
 }
 
-.nav-link {
-    font-size: 25px;
+.bannerNosotros {
+  height: 50%;
+  width: 100%;
 }
 
-.logo_navbar {
-    width: 100px;
-    height: 100px;
+.bannerEv {
+  height: 50%;
+  width: 100%;
 }
 
-.navbar-brand {
-    width: 100px;
-    height: 100px;
+.fadein img {
+  opacity: 0.5;
+  transition: 1s ease;
 }
 
-.video_youtube {
-    height: 780px;
+.fadein img:hover {
+  opacity: 1;
+  transition: 1s ease;
 }
 
-@media screen and (max-width:768px) {
-    .nav-link {
-        font-size: 15px;
-    }
-
-    .logo_navbar {
-        width: 50px;
-        height: 50px;
-    }
-
-    .navbar-brand {
-        width: 50px;
-        height: 50px;
-    }
-
-    .video_youtube {
-        height: 300px;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */

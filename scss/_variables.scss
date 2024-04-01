@@ -1,0 +1,12 @@
+$colorfondo:rgb(0, 0, 0);
+$colorprimario:rgb(255, 255, 255);
+$width100px: 100px;
+$heigth100px: 100px;
+$tipografiaFuente:(fuente:"Montserrat", tamano:16px, color:rgb(134, 129, 129), espacio:10px);
+.text-parrafo {
+    font-family: map-get($tipografiaFuente, fuente);
+    font-size: map-get($tipografiaFuente, tamano);
+    color: map-get($tipografiaFuente, color);
+    padding: map-get($tipografiaFuente, espacio);
+}
+
