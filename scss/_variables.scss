@@ -9,4 +9,6 @@ $tipografiaFuente:(fuente:"Montserrat", tamano:16px, color:rgb(134, 129, 129), e
     color: map-get($tipografiaFuente, color);
     padding: map-get($tipografiaFuente, espacio);
 }
-
+h1 {
+margin: 25px;
+}

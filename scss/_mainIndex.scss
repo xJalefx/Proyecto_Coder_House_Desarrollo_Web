@@ -19,14 +19,15 @@ main {
         width: $width100px;
         height: 35%px;
     }
-    .video_card {
+    .video_youtube {
         padding: 2%;
+        height: 700px;
     }
     .card-body {
         text-align: center;   
     }
-    .video_youtube {
-        height: 780px;
+    .spacing {
+        padding: 2%;
     }
     
     @media screen and (max-width:768px) {
